@@ -56,7 +56,7 @@ export default {
         software: null,
     }),
     created: async function (){
-        const response = await axios.get('http://localhost:1337/api/softwareintegration?populate=*')
+        const response = await axios.get('https://cms.pbwebvision.in/api/softwareintegration?populate=*')
         const { data: {attributes} } = response.data
         this.software = attributes
     },

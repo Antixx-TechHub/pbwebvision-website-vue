@@ -83,7 +83,7 @@ export default defineComponent ({
         },
     }),
     created: async function (){
-        const response = await axios.get('http://localhost:1337/api/appscreen?populate=singleScreenshot.image')
+        const response = await axios.get('https://cms.pbwebvision.in/api/appscreen?populate=singleScreenshot.image')
         const { data: {attributes} } = response.data
         this.screenshots = attributes
     },

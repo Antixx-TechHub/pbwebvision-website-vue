@@ -73,7 +73,7 @@ export default defineComponent ({
         },
     }),
     created: async function (){
-        const response = await axios.get('http://localhost:1337/api/trustedby?populate=trustedBySlides.image')
+        const response = await axios.get('https://cms.pbwebvision.in/api/trustedby?populate=trustedBySlides.image')
         const { data: {attributes} } = response.data
         this.trusted = attributes
     },

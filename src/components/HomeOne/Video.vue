@@ -58,7 +58,7 @@ export default {
         },
     },
     created: async function (){
-        const response = await axios.get('http://localhost:1337/api/video?populate=*')
+        const response = await axios.get('https://cms.pbwebvision.in/api/video?populate=*')
         const { data: {attributes} } = response.data
         this.video = attributes
     },

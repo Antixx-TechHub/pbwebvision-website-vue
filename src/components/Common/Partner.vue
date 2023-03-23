@@ -68,7 +68,7 @@ export default defineComponent ({
         },
     }),
     created: async function (){
-        const response = await axios.get('http://localhost:1337/api/partner?populate=partnerSlides.image')
+        const response = await axios.get('https://cms.pbwebvision.in/api/partner?populate=partnerSlides.image')
         const { data: {attributes} } = response.data
         this.partners = attributes
     },

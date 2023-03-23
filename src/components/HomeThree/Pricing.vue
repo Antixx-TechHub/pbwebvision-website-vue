@@ -57,7 +57,7 @@ export default {
         }
     },
     created: async function (){
-        const response = await axios.get('http://localhost:1337/api/pricinghometwo?populate=pricingCard.pricingFeatures')
+        const response = await axios.get('https://cms.pbwebvision.in/api/pricinghometwo?populate=pricingCard.pricingFeatures')
         const { data: {attributes} } = response.data
         this.pricings = attributes
     },

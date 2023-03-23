@@ -77,7 +77,7 @@ export default defineComponent ({
         feedbacks: null,
     }),
     created: async function (){
-        const response = await axios.get('http://localhost:1337/api/customerreviewhometwo?populate=singleFeedbacks.image')
+        const response = await axios.get('https://cms.pbwebvision.in/api/customerreviewhometwo?populate=singleFeedbacks.image')
         const { data: {attributes} } = response.data
         this.feedbacks = attributes
     },

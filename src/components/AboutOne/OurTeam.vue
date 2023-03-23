@@ -40,7 +40,7 @@ export default {
         }
     },
     created: async function (){
-        const response = await axios.get('http://localhost:1337/api/team?populate=*')
+        const response = await axios.get('https://cms.pbwebvision.in/api/team?populate=*')
         const { data: {attributes} } = response.data
         this.teams = attributes
     },

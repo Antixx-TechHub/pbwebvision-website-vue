@@ -47,7 +47,7 @@ export default {
         }
     },
     created: async function (){
-        const response = await axios.get('http://localhost:1337/api/appdownload?populate=*')
+        const response = await axios.get('https://cms.pbwebvision.in/api/appdownload?populate=*')
         const { data: {attributes} } = response.data
         this.download = attributes
     },

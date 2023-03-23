@@ -32,7 +32,7 @@ export default {
         funfacts: null,
     }),
     created: async function (){
-        const response = await axios.get('http://localhost:1337/api/funfact?populate=*')
+        const response = await axios.get('https://cms.pbwebvision.in/api/funfact?populate=*')
         const { data: {attributes} } = response.data
         this.funfacts = attributes
     },

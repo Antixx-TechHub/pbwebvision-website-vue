@@ -101,7 +101,7 @@ export default defineComponent ({
         },
     }),
     created: async function (){
-        const response = await axios.get('http://localhost:1337/api/customerreview?populate=singleFeedbacks.image')
+        const response = await axios.get('https://cms.pbwebvision.in/api/customerreview?populate=singleFeedbacks.image')
         const { data: {attributes} } = response.data
         this.feedbacks = attributes
     },

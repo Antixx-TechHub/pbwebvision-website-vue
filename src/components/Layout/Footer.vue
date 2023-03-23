@@ -40,7 +40,7 @@ export default {
         };
     },
     created: async function (){
-        const response = await axios.get('http://localhost:1337/api/footer?populate=*')
+        const response = await axios.get('https://cms.pbwebvision.in/api/footer?populate=*')
         const { data: {attributes} } = response.data
         this.footer = attributes
     },

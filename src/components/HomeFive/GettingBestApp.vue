@@ -43,7 +43,7 @@ export default {
         features: null,
     }),
     created: async function (){
-        const response = await axios.get('http://localhost:1337/api/gettingbestapphomefive?populate=*')
+        const response = await axios.get('https://cms.pbwebvision.in/api/gettingbestapphomefive?populate=*')
         const { data: {attributes} } = response.data
         this.features = attributes
     },
